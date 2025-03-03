@@ -15,18 +15,19 @@
 
         <label for="fueros">Seleccione un Fuero:</label>
         <select id="fueros" required>
-            <option value="PENAL">PENAL</option>
-            <option value="CIVIL">CIVIL</option>
-            <option value="COMERCIAL">COMERCIAL</option>
-            <option value="LABORAL">LABORAL</option>
-            <option value="CONTENCIOSO ADMINISTRATIVO">CONTENCIOSO ADMINISTRATIVO</option>
-            <option value="OTRO">OTRO</option>
+            <option value="PENAL" style="background-color: #ffcccc;">PENAL</option>
+            <option value="CIVIL" style="background-color: #ccffcc;">CIVIL</option>
+            <option value="COMERCIAL" style="background-color: #ccccff;">COMERCIAL</option>
+            <option value="LABORAL" style="background-color: #ffffcc;">LABORAL</option>
+            <option value="CONTENCIOSO ADMINISTRATIVO" style="background-color: #ffccff;">CONTENCIOSO ADMINISTRATIVO</option>
+            <option value="OTRO" style="background-color: #c5c4c3;">OTRO</option>
         </select>
 
         <label for="dias">Cantidad de Días:</label>
         <input type="number" id="dias" required>
 
         <button type="submit">Calcular Fecha Final</button>
+        <button type="button" id="limpiarBoton">Limpiar</button>
     </form>
 
     <h2>Fecha Final: <span id="fechaResultado"></span></h2>

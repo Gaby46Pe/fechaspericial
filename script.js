@@ -39,3 +39,25 @@ document.getElementById('calculoForm').addEventListener('submit', function(event
     const fechaFinal = calcularFechaFinal(new Date(fechaInicial), dias);
     document.getElementById('fechaResultado').textContent = fechaFinal.toLocaleDateString('es-ES');
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const fueroSelect = document.getElementById('fueros');
+
+    // Función para actualizar el color de fondo del select según la opción seleccionada
+    const updateSelectColor = () => {
+        const selectedOption = fueroSelect.options[fueroSelect.selectedIndex];
+        fueroSelect.style.backgroundColor = selectedOption.style.backgroundColor;
+    };
+
+    // Cambiar color al cargar la página
+    updateSelectColor();
+
+    // Cambiar color cuando se seleccione una nueva opción
+    fueroSelect.addEventListener('change', updateSelectColor);
+});
+
+
+document.getElementById('limpiarBoton').addEventListener('click', function() {
+    document.getElementById('calculoForm').reset(); // Limpia el formulario
+    document.getElementById('fechaResultado').textContent = ''; // Limpia el resultado
+});
