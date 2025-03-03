@@ -61,6 +61,7 @@ button:hover {
         margin-left: 2%; /* Menos margen en tabletas */
     }
 }
+
 /* Estilos para pantallas móviles */
 @media (max-width: 480px) {
     form {
