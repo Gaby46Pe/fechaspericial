@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Días Hábiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Cálculo de Días Hábiles</h1>
+    <form id="calculoForm">
+        <label for="fechaInicial">Fecha Inicial (dd/mm/año):</label>
+        <input type="text" id="fechaInicial" placeholder="dd/mm/aaaa" required>
+
+        <label for="fueros">Seleccione un Fuero:</label>
+        <select id="fueros" required>
+            <option value="PENAL">PENAL</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="COMERCIAL">COMERCIAL</option>
+            <option value="LABORAL">LABORAL</option>
+            <option value="CONTENCIOSO ADMINISTRATIVO">CONTENCIOSO ADMINISTRATIVO</option>
+            <option value="OTRO">OTRO</option>
+        </select>
+
+        <label for="dias">Cantidad de Días:</label>
+        <input type="number" id="dias" required>
+
+        <button type="submit">Calcular Fecha Final</button>
+    </form>
+
+    <h2>Fecha Final: <span id="fechaResultado"></span></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
