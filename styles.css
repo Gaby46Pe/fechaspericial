@@ -47,3 +47,37 @@ button:hover {
 #limpiarBoton:hover {
     background-color: #c82333; /* Color al pasar el mouse */
 }
+/* Estilos para pantallas de tabletas */
+@media (max-width: 768px) {
+    form {
+        width: 80%; /* Aumenta el ancho del formulario en tabletas */
+    }
+
+    button {
+        width: 48%; /* Botones más anchos en tabletas */
+    }
+
+    #limpiarBoton {
+        margin-left: 2%; /* Menos margen en tabletas */
+    }
+}
+/* Estilos para pantallas móviles */
+@media (max-width: 480px) {
+    form {
+        width: 90%; /* Aumenta el ancho del formulario en móviles */
+        padding: 15px; /* Menos padding en móviles */
+    }
+
+    input, select {
+        width: 100%; /* Ancho completo para inputs y selects */
+    }
+
+    button {
+        width: 100%; /* Botones de ancho completo en móviles */
+        margin: 5px 0; /* Margen vertical entre botones */
+    }
+
+    #limpiarBoton {
+        margin-left: 0; /* Sin margen en móviles */
+    }
+}
